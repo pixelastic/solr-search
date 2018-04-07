@@ -1,0 +1,9 @@
+module.exports = {
+  extends: [
+    'algolia/jest',
+  ],
+  rules: {
+  },
+  globals: {
+  }
+};
