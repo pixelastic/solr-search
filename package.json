@@ -4,18 +4,30 @@
   "license": "MIT",
   "scripts": {
     "lint": "./scripts/lint",
+    "test": "./scripts/test",
+    "watch": "./scripts/test-watch",
     "extract": "./scripts/extract",
     "build": "./scripts/build",
     "serve": "./scripts/serve"
   },
   "devDependencies": {
+    "babel-cli": "^6.26.0",
     "babel-eslint": "^8.2.2",
+    "babel-plugin-syntax-object-rest-spread": "^6.13.0",
+    "babel-plugin-transform-object-rest-spread": "^6.13.0",
+    "babel-preset-env": "^1.6.1",
+    "bluebird": "^3.5.1",
+    "cheerio": "^1.0.0-rc.2",
+    "css-to-object": "^1.1.0",
     "eslint": "^4.19.1",
     "eslint-config-algolia": "^13.1.0",
     "eslint-config-prettier": "^2.9.0",
     "eslint-plugin-import": "^2.10.0",
     "eslint-plugin-jest": "^21.15.0",
     "eslint-plugin-prettier": "^2.6.0",
+    "html-entities": "^1.2.1",
+    "jest": "^22.4.3",
+    "lodash": "^4.17.5",
     "prettier": "^1.11.1"
   }
 }
