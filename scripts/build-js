@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+babel ./src/public/script.js -o ./public/script.js

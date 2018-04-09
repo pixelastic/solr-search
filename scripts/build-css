@@ -1,0 +1,3 @@
+#!/usr/bin/env sh
+
+tailwind build ./src/public/style.css -c ./tailwind.js -o ./public/style.css

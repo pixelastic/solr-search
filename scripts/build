@@ -1,3 +1,4 @@
 #!/usr/bin/env sh
 
-tailwind build ./src/style.css -o ./public/style.css
+yarn run build:js 
+yarn run build:css

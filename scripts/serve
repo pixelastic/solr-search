@@ -1,0 +1,8 @@
+#!/usr/bin/env sh
+
+yarn run build
+parallelshell \
+  "live-server ./public" \
+  "onchange ./tailwind.js ./src/public/style.css -- yarn run build:css" \
+  "onchange ./src/public/script.js -- yarn run build:js"
+

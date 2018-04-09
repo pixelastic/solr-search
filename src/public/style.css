@@ -1,0 +1,11 @@
+@tailwind preflight;
+@tailwind components;
+@tailwind utilities;
+
+.debug,
+.debug * {
+  outline: 1px solid gold;
+}
+
+.bg-red { background-color: #D9411E; }
+.text-red { color: #D9411E; }
