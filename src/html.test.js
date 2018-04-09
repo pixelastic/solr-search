@@ -17,6 +17,7 @@ describe('html', () => {
   describe('getTextNodes', () => {
     it('should get all text nodes', () => {
       const actual = fixture('0100').getTextNodes();
+      console.info(actual);
 
       expect(actual).toHaveLength(13);
     });
@@ -28,6 +29,11 @@ describe('html', () => {
     });
 
     describe('clean up content', () => {
+      it('should remove icons', () => {
+        const actual = fixture('0100').getTextNodes()[6];
+
+        expect(actual.content).toMatch(/^If you have/);
+      });
       it('should style the links', () => {
         const actual = fixture('0102').getTextNodes()[12];
 

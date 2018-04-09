@@ -14,7 +14,7 @@ module.exports = {
       },
       getTextNodes() {
         let rawNodes = this.getRawTextNodes();
-        rawNodes = this.__removeHeaderAndFooterNodes(rawNodes);
+        rawNodes = this.__removeNonIndexable(rawNodes);
 
         let nodes = this.__groupNodesByPosition(rawNodes);
         nodes = this.__cleanupContent(nodes);
@@ -65,7 +65,13 @@ module.exports = {
 
         const content = $(node).html();
         if (content === '&#xF05A;') {
-          return 'icon_information';
+          return 'icon';
+        }
+        if (content === '&#xF0E7;') {
+          return 'icon';
+        }
+        if (content === '&#xF071;') {
+          return 'icon';
         }
 
         console.info($(node).html(), color, size, height);
@@ -73,10 +79,10 @@ module.exports = {
         return 'nope';
       },
 
-      // Remove header and footers from the list of nodes
-      __removeHeaderAndFooterNodes(rawNodes) {
+      // Remove header, footers, icons
+      __removeNonIndexable(rawNodes) {
         return _.reject(rawNodes, node =>
-          _.includes(['header', 'footer'], this.getNodeType(node))
+          _.includes(['header', 'footer', 'icon'], this.getNodeType(node))
         );
       },
 
