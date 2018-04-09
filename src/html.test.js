@@ -31,12 +31,14 @@ describe('html', () => {
       it('should style the links', () => {
         const actual = fixture('0102').getTextNodes()[12];
 
-        expect(actual.content).toContain('<span class="link">Configuring Logging</span>')
+        expect(actual.content).toContain(
+          '<span class="link">Configuring Logging</span>'
+        );
       });
       it('should clean list items', () => {
         const actual = fixture('0102').getTextNodes()[12];
 
-        expect(actual.content).toMatch(/^The default Solr/)
+        expect(actual.content).toMatch(/^The default Solr/);
       });
     });
   });

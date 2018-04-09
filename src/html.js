@@ -1,5 +1,6 @@
 const cheerio = require('cheerio');
 const cssToObject = require('css-to-object');
+const entities = new (require('html-entities')).AllHtmlEntities();
 const _ = require('lodash');
 
 module.exports = {
@@ -124,6 +125,7 @@ module.exports = {
           let content = node.content;
           content = this.__replaceBlueLink(content);
 
+          // Removing list bullet point
           content = content.replace('&#x2022;', '');
 
           const $_ = cheerio.load(`<div class="root">${content}</div>`);
@@ -136,7 +138,17 @@ module.exports = {
             const $unusedNode = $(unusedNode);
             $unusedNode.replaceWith($unusedNode.html());
           });
+          // Replace inline code
+          _.each($_('.ff3'), inlineCodeNode => {
+            const $inlineCodeNode = $(inlineCodeNode);
+            $inlineCodeNode.replaceWith(
+              `<span class="code">${$inlineCodeNode.html()}</span>`
+            );
+          });
+
+          // Finding the new element content
           content = $root.html();
+          content = entities.decode(content).replace('’', "'");
 
           return {
             ...node,
