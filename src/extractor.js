@@ -27,7 +27,7 @@ module.exports = {
           }
 
           records.push({
-            pageId: pageId,
+            pageId,
             hierarchy: _.compact(_.values(hierarchy)),
             content: node.content,
           });

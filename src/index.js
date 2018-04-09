@@ -1,10 +1,14 @@
 const _ = require('lodash');
 const extractor = require('./extractor');
+const stringify = require('json-stable-stringify');
+const fs = require('fs');
 
 let records = [];
-_.each(_.range(100, 102), pageId => {
+_.each(_.range(6, 120), pageId => {
   console.info(`Page: ${pageId}`);
-  records += extractor.init(pageId).getRecords();
+  records = records.concat(extractor.init(pageId).getRecords());
 });
 
-console.info(records);
+fs.writeFileSync('./records.json', stringify(records, { space: '  ' }));
+
+// console.info(records);

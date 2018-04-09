@@ -26,14 +26,23 @@ module.exports = {
         const size = this.__getSize(node);
         const height = this.__getHeight(node);
         if (color === 'orange') {
-          if (size === 76) {
+          if (size === 84) {
             return 'h1';
           }
-          if (size === 64) {
+          if (size === 76) {
             return 'h2';
           }
-          if (size === 52) {
+          if (size === 64) {
             return 'h3';
+          }
+          if (size === 52) {
+            return 'h4';
+          }
+          if (size === 40) {
+            return 'h5';
+          }
+          if (size === 36) {
+            return 'h6';
           }
         }
 
@@ -48,6 +57,11 @@ module.exports = {
             return 'code';
           }
 
+          // Title of a code example
+          if (size === 40 && height === 33) {
+            return 'h7';
+          }
+
           // Regular text
           if (size === 40 && height === 35) {
             return 'text';
@@ -56,22 +70,47 @@ module.exports = {
           if (size === 44) {
             return 'text';
           }
+          // Page 126, the text uses those sizes...
+          if (size === 52 && height === 46) {
+            return 'text';
+          }
         }
 
-        // A line if text that starts with a blue word is still considered text
-        if (color === 'blue' && size === 40) {
-          return 'text';
+        if (color === 'blue') {
+          // A line if text that starts with a blue word is still considered text
+          if (size === 40) {
+            return 'text';
+          }
+          if (size === 23) {
+            return 'annotation';
+          }
+          // Blue and Code, at the start of a line. Let's simplify it to simple
+          // text
+          if (size === 44) {
+            return 'text'
+          }
+        }
+
+        // Image caption
+        if (color === 'darkred') {
+          return 'caption';
+        }
+
+        // Highlighted code example
+        if (color === 'code') {
+          return 'highlighted_code';
         }
 
         const content = $(node).html();
-        if (content === '&#xF05A;') {
+        if (content.match(/^&#xF0/)) {
           return 'icon';
         }
-        if (content === '&#xF0E7;') {
+        if (content.match(/^&#x246/)) {
           return 'icon';
         }
-        if (content === '&#xF071;') {
-          return 'icon';
+
+        if (content.match(/^&#xCA;/)) {
+          return 'highlighted_code';
         }
 
         console.info($(node).html(), color, size, height);
@@ -82,7 +121,18 @@ module.exports = {
       // Remove header, footers, icons
       __removeNonIndexable(rawNodes) {
         return _.reject(rawNodes, node =>
-          _.includes(['header', 'footer', 'icon'], this.getNodeType(node))
+          _.includes(
+            [
+              'header',
+              'footer',
+              'icon',
+              'caption',
+              'highlighted_code',
+              'annotation',
+              'nope'
+            ],
+            this.getNodeType(node)
+          )
         );
       },
 
@@ -212,6 +262,13 @@ module.exports = {
           'rgb(217,65,30)': 'orange',
           'rgb(51,51,51)': 'gray',
           'rgb(66,139,202)': 'blue',
+          'rgb(122,37,24)': 'darkred',
+          'rgb(47,111,159)': 'code',
+          'rgb(0,119,136)': 'code',
+          'rgb(153,153,153)': 'code',
+          'rgb(204,51,0)': 'code',
+          'rgb(79,159,207)': 'code',
+          'rgb(0,102,153)': 'code',
         };
 
         return colorHash[rgbColor];
