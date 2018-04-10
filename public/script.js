@@ -23,8 +23,8 @@ function allItemsTemplate(response) {
     var zoomPng = sourcePng;
     if (!isLocalhost) {
       backgroundPng = cloudinary(sourcePng, {
-        width: 132,
-        height: 172,
+        width: 265,
+        height: 345,
         quality: 70,
         format: 'auto'
       });
