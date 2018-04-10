@@ -14,10 +14,11 @@ const colors = {
   'grey-lighter': '#f1f5f8',
   'grey-lightest': '#f8fafc',
   white: '#ffffff',
-  'white-25': 'rgba(255, 255, 255, .75)',
+  'white-25': 'rgba(255, 255, 255, .25)',
   'white-50': 'rgba(255, 255, 255, .5)',
-  'white-65': 'rgba(255, 255, 255, .35)',
-  'white-75': 'rgba(255, 255, 255, .25)',
+  'white-65': 'rgba(255, 255, 255, .65)',
+  'white-75': 'rgba(255, 255, 255, .75)',
+  'white-90': 'rgba(255, 255, 255, .9)',
 
   'red-darkest': '#3b0d0c',
   'red-darker': '#621b18',
@@ -124,10 +125,12 @@ const dimensionScale = {
 };
 const widthScale = {
   ...dimensionScale,
+  page: '16rem',
   '100vw': '100vw',
 };
 const heightScale = {
   ...dimensionScale,
+  page: '21rem',
   '100vh': '100vh',
 };
 
@@ -356,9 +359,7 @@ module.exports = {
   |
   */
 
-  plugins: [
-    require('tailwindcss/plugins/container')()
-  ],
+  plugins: [require('tailwindcss/plugins/container')()],
 
   /*
   |-----------------------------------------------------------------------------

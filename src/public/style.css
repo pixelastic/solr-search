@@ -9,3 +9,25 @@
 
 .bg-red { background-color: #D9411E; }
 .text-red { color: #D9411E; }
+
+.flrnw { @apply .flex .flex-row .flex-no-wrap; }
+.flrw { @apply .flex .flex-row .flex-wrap; }
+.flcnw { @apply .flex .flex-col .flex-no-wrap; }
+.flcw { @apply .flex .flex-col .flex-wrap; }
+.fln { @apply .flex-none; }
+.fla { @apply .flex-1; }
+.flc { @apply .flex .justify-center .items-center }
+.flcch { @apply .flex .justify-center }
+.flccv { @apply .flex .items-center }
+.flrar { @apply .flex .justify-end }
+.flral { @apply .flex .justify-start }
+.flcat { @apply .flex .justify-start }
+.flcab { @apply .flex .justify-end }
+.flspa { @apply .justify-around }
+.flspb { @apply .justify-around }
+.flcat { @apply .justify-start }
+.flcab { @apply .justify-end }
+.flral { @apply .justify-start }
+.flrar { @apply .justify-end }
+
+.offscreen { position: absolute; left: -1000vh; }

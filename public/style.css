@@ -716,7 +716,7 @@ button,
 }
 
 .bg-white-25 {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .25);
 }
 
 .bg-white-50 {
@@ -724,11 +724,15 @@ button,
 }
 
 .bg-white-65 {
-  background-color: rgba(255, 255, 255, .35);
+  background-color: rgba(255, 255, 255, .65);
 }
 
 .bg-white-75 {
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.bg-white-90 {
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .bg-red-darkest {
@@ -1040,7 +1044,7 @@ button,
 }
 
 .hover\:bg-white-25:hover {
-  background-color: rgba(255, 255, 255, .75);
+  background-color: rgba(255, 255, 255, .25);
 }
 
 .hover\:bg-white-50:hover {
@@ -1048,11 +1052,15 @@ button,
 }
 
 .hover\:bg-white-65:hover {
-  background-color: rgba(255, 255, 255, .35);
+  background-color: rgba(255, 255, 255, .65);
 }
 
 .hover\:bg-white-75:hover {
-  background-color: rgba(255, 255, 255, .25);
+  background-color: rgba(255, 255, 255, .75);
+}
+
+.hover\:bg-white-90:hover {
+  background-color: rgba(255, 255, 255, .9);
 }
 
 .hover\:bg-red-darkest:hover {
@@ -1428,7 +1436,7 @@ button,
 }
 
 .border-white-25 {
-  border-color: rgba(255, 255, 255, .75);
+  border-color: rgba(255, 255, 255, .25);
 }
 
 .border-white-50 {
@@ -1436,11 +1444,15 @@ button,
 }
 
 .border-white-65 {
-  border-color: rgba(255, 255, 255, .35);
+  border-color: rgba(255, 255, 255, .65);
 }
 
 .border-white-75 {
-  border-color: rgba(255, 255, 255, .25);
+  border-color: rgba(255, 255, 255, .75);
+}
+
+.border-white-90 {
+  border-color: rgba(255, 255, 255, .9);
 }
 
 .border-red-darkest {
@@ -1752,7 +1764,7 @@ button,
 }
 
 .hover\:border-white-25:hover {
-  border-color: rgba(255, 255, 255, .75);
+  border-color: rgba(255, 255, 255, .25);
 }
 
 .hover\:border-white-50:hover {
@@ -1760,11 +1772,15 @@ button,
 }
 
 .hover\:border-white-65:hover {
-  border-color: rgba(255, 255, 255, .35);
+  border-color: rgba(255, 255, 255, .65);
 }
 
 .hover\:border-white-75:hover {
-  border-color: rgba(255, 255, 255, .25);
+  border-color: rgba(255, 255, 255, .75);
+}
+
+.hover\:border-white-90:hover {
+  border-color: rgba(255, 255, 255, .9);
 }
 
 .hover\:border-red-darkest:hover {
@@ -2749,6 +2765,10 @@ button,
   height: 7in;
 }
 
+.h-page {
+  height: 21rem;
+}
+
 .h-100vh {
   height: 100vh;
 }
@@ -3305,6 +3325,10 @@ button,
   max-height: 7in;
 }
 
+.max-h-page {
+  max-height: 21rem;
+}
+
 .max-h-100vh {
   max-height: 100vh;
 }
@@ -3419,6 +3443,10 @@ button,
 
 .max-w-7in {
   max-width: 7in;
+}
+
+.max-w-page {
+  max-width: 16rem;
 }
 
 .max-w-100vw {
@@ -3537,6 +3565,10 @@ button,
   min-height: 7in;
 }
 
+.min-h-page {
+  min-height: 21rem;
+}
+
 .min-h-100vh {
   min-height: 100vh;
 }
@@ -3651,6 +3683,10 @@ button,
 
 .min-w-7in {
   min-width: 7in;
+}
+
+.min-w-page {
+  min-width: 16rem;
 }
 
 .min-w-100vw {
@@ -4712,7 +4748,7 @@ button,
 }
 
 .text-white-25 {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .25);
 }
 
 .text-white-50 {
@@ -4720,11 +4756,15 @@ button,
 }
 
 .text-white-65 {
-  color: rgba(255, 255, 255, .35);
+  color: rgba(255, 255, 255, .65);
 }
 
 .text-white-75 {
-  color: rgba(255, 255, 255, .25);
+  color: rgba(255, 255, 255, .75);
+}
+
+.text-white-90 {
+  color: rgba(255, 255, 255, .9);
 }
 
 .text-red-darkest {
@@ -5036,7 +5076,7 @@ button,
 }
 
 .hover\:text-white-25:hover {
-  color: rgba(255, 255, 255, .75);
+  color: rgba(255, 255, 255, .25);
 }
 
 .hover\:text-white-50:hover {
@@ -5044,11 +5084,15 @@ button,
 }
 
 .hover\:text-white-65:hover {
-  color: rgba(255, 255, 255, .35);
+  color: rgba(255, 255, 255, .65);
 }
 
 .hover\:text-white-75:hover {
-  color: rgba(255, 255, 255, .25);
+  color: rgba(255, 255, 255, .75);
+}
+
+.hover\:text-white-90:hover {
+  color: rgba(255, 255, 255, .9);
 }
 
 .hover\:text-red-darkest:hover {
@@ -5629,6 +5673,10 @@ button,
   width: 7in;
 }
 
+.w-page {
+  width: 16rem;
+}
+
 .w-100vw {
   width: 100vw;
 }
@@ -5680,6 +5728,103 @@ button,
 
 .text-red {
   color: #d9411e;
+}
+
+.flrnw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+}
+
+.flrw {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+.flcnw {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: nowrap;
+}
+
+.flcw {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.fln {
+  flex: none;
+}
+
+.fla {
+  flex: 1;
+}
+
+.flc {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flcch {
+  display: flex;
+  justify-content: center;
+}
+
+.flccv {
+  display: flex;
+  align-items: center;
+}
+
+.flrar {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flral {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flcat {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.flcab {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.flspa {
+  justify-content: space-around;
+}
+
+.flspb {
+  justify-content: space-around;
+}
+
+.flcat {
+  justify-content: flex-start;
+}
+
+.flcab {
+  justify-content: flex-end;
+}
+
+.flral {
+  justify-content: flex-start;
+}
+
+.flrar {
+  justify-content: flex-end;
+}
+
+.offscreen {
+  position: absolute;
+  left: -1000vh;
 }
 
 @media (min-width: 576px) {
@@ -5761,7 +5906,7 @@ button,
   }
 
   .sm\:bg-white-25 {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .sm\:bg-white-50 {
@@ -5769,11 +5914,15 @@ button,
   }
 
   .sm\:bg-white-65 {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .sm\:bg-white-75 {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:bg-white-90 {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .sm\:bg-red-darkest {
@@ -6085,7 +6234,7 @@ button,
   }
 
   .sm\:hover\:bg-white-25:hover {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .sm\:hover\:bg-white-50:hover {
@@ -6093,11 +6242,15 @@ button,
   }
 
   .sm\:hover\:bg-white-65:hover {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .sm\:hover\:bg-white-75:hover {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:hover\:bg-white-90:hover {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .sm\:hover\:bg-red-darkest:hover {
@@ -6473,7 +6626,7 @@ button,
   }
 
   .sm\:border-white-25 {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .sm\:border-white-50 {
@@ -6481,11 +6634,15 @@ button,
   }
 
   .sm\:border-white-65 {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .sm\:border-white-75 {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:border-white-90 {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .sm\:border-red-darkest {
@@ -6797,7 +6954,7 @@ button,
   }
 
   .sm\:hover\:border-white-25:hover {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .sm\:hover\:border-white-50:hover {
@@ -6805,11 +6962,15 @@ button,
   }
 
   .sm\:hover\:border-white-65:hover {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .sm\:hover\:border-white-75:hover {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:hover\:border-white-90:hover {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .sm\:hover\:border-red-darkest:hover {
@@ -7794,6 +7955,10 @@ button,
     height: 7in;
   }
 
+  .sm\:h-page {
+    height: 21rem;
+  }
+
   .sm\:h-100vh {
     height: 100vh;
   }
@@ -8350,6 +8515,10 @@ button,
     max-height: 7in;
   }
 
+  .sm\:max-h-page {
+    max-height: 21rem;
+  }
+
   .sm\:max-h-100vh {
     max-height: 100vh;
   }
@@ -8464,6 +8633,10 @@ button,
 
   .sm\:max-w-7in {
     max-width: 7in;
+  }
+
+  .sm\:max-w-page {
+    max-width: 16rem;
   }
 
   .sm\:max-w-100vw {
@@ -8582,6 +8755,10 @@ button,
     min-height: 7in;
   }
 
+  .sm\:min-h-page {
+    min-height: 21rem;
+  }
+
   .sm\:min-h-100vh {
     min-height: 100vh;
   }
@@ -8696,6 +8873,10 @@ button,
 
   .sm\:min-w-7in {
     min-width: 7in;
+  }
+
+  .sm\:min-w-page {
+    min-width: 16rem;
   }
 
   .sm\:min-w-100vw {
@@ -9749,7 +9930,7 @@ button,
   }
 
   .sm\:text-white-25 {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .sm\:text-white-50 {
@@ -9757,11 +9938,15 @@ button,
   }
 
   .sm\:text-white-65 {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .sm\:text-white-75 {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:text-white-90 {
+    color: rgba(255, 255, 255, .9);
   }
 
   .sm\:text-red-darkest {
@@ -10073,7 +10258,7 @@ button,
   }
 
   .sm\:hover\:text-white-25:hover {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .sm\:hover\:text-white-50:hover {
@@ -10081,11 +10266,15 @@ button,
   }
 
   .sm\:hover\:text-white-65:hover {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .sm\:hover\:text-white-75:hover {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .sm\:hover\:text-white-90:hover {
+    color: rgba(255, 255, 255, .9);
   }
 
   .sm\:hover\:text-red-darkest:hover {
@@ -10666,6 +10855,10 @@ button,
     width: 7in;
   }
 
+  .sm\:w-page {
+    width: 16rem;
+  }
+
   .sm\:w-100vw {
     width: 100vw;
   }
@@ -10786,7 +10979,7 @@ button,
   }
 
   .md\:bg-white-25 {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .md\:bg-white-50 {
@@ -10794,11 +10987,15 @@ button,
   }
 
   .md\:bg-white-65 {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .md\:bg-white-75 {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:bg-white-90 {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .md\:bg-red-darkest {
@@ -11110,7 +11307,7 @@ button,
   }
 
   .md\:hover\:bg-white-25:hover {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .md\:hover\:bg-white-50:hover {
@@ -11118,11 +11315,15 @@ button,
   }
 
   .md\:hover\:bg-white-65:hover {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .md\:hover\:bg-white-75:hover {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:hover\:bg-white-90:hover {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .md\:hover\:bg-red-darkest:hover {
@@ -11498,7 +11699,7 @@ button,
   }
 
   .md\:border-white-25 {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .md\:border-white-50 {
@@ -11506,11 +11707,15 @@ button,
   }
 
   .md\:border-white-65 {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .md\:border-white-75 {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:border-white-90 {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .md\:border-red-darkest {
@@ -11822,7 +12027,7 @@ button,
   }
 
   .md\:hover\:border-white-25:hover {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .md\:hover\:border-white-50:hover {
@@ -11830,11 +12035,15 @@ button,
   }
 
   .md\:hover\:border-white-65:hover {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .md\:hover\:border-white-75:hover {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:hover\:border-white-90:hover {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .md\:hover\:border-red-darkest:hover {
@@ -12819,6 +13028,10 @@ button,
     height: 7in;
   }
 
+  .md\:h-page {
+    height: 21rem;
+  }
+
   .md\:h-100vh {
     height: 100vh;
   }
@@ -13375,6 +13588,10 @@ button,
     max-height: 7in;
   }
 
+  .md\:max-h-page {
+    max-height: 21rem;
+  }
+
   .md\:max-h-100vh {
     max-height: 100vh;
   }
@@ -13489,6 +13706,10 @@ button,
 
   .md\:max-w-7in {
     max-width: 7in;
+  }
+
+  .md\:max-w-page {
+    max-width: 16rem;
   }
 
   .md\:max-w-100vw {
@@ -13607,6 +13828,10 @@ button,
     min-height: 7in;
   }
 
+  .md\:min-h-page {
+    min-height: 21rem;
+  }
+
   .md\:min-h-100vh {
     min-height: 100vh;
   }
@@ -13721,6 +13946,10 @@ button,
 
   .md\:min-w-7in {
     min-width: 7in;
+  }
+
+  .md\:min-w-page {
+    min-width: 16rem;
   }
 
   .md\:min-w-100vw {
@@ -14774,7 +15003,7 @@ button,
   }
 
   .md\:text-white-25 {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .md\:text-white-50 {
@@ -14782,11 +15011,15 @@ button,
   }
 
   .md\:text-white-65 {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .md\:text-white-75 {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:text-white-90 {
+    color: rgba(255, 255, 255, .9);
   }
 
   .md\:text-red-darkest {
@@ -15098,7 +15331,7 @@ button,
   }
 
   .md\:hover\:text-white-25:hover {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .md\:hover\:text-white-50:hover {
@@ -15106,11 +15339,15 @@ button,
   }
 
   .md\:hover\:text-white-65:hover {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .md\:hover\:text-white-75:hover {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .md\:hover\:text-white-90:hover {
+    color: rgba(255, 255, 255, .9);
   }
 
   .md\:hover\:text-red-darkest:hover {
@@ -15691,6 +15928,10 @@ button,
     width: 7in;
   }
 
+  .md\:w-page {
+    width: 16rem;
+  }
+
   .md\:w-100vw {
     width: 100vw;
   }
@@ -15811,7 +16052,7 @@ button,
   }
 
   .lg\:bg-white-25 {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .lg\:bg-white-50 {
@@ -15819,11 +16060,15 @@ button,
   }
 
   .lg\:bg-white-65 {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .lg\:bg-white-75 {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:bg-white-90 {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .lg\:bg-red-darkest {
@@ -16135,7 +16380,7 @@ button,
   }
 
   .lg\:hover\:bg-white-25:hover {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .lg\:hover\:bg-white-50:hover {
@@ -16143,11 +16388,15 @@ button,
   }
 
   .lg\:hover\:bg-white-65:hover {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .lg\:hover\:bg-white-75:hover {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:hover\:bg-white-90:hover {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .lg\:hover\:bg-red-darkest:hover {
@@ -16523,7 +16772,7 @@ button,
   }
 
   .lg\:border-white-25 {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .lg\:border-white-50 {
@@ -16531,11 +16780,15 @@ button,
   }
 
   .lg\:border-white-65 {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .lg\:border-white-75 {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:border-white-90 {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .lg\:border-red-darkest {
@@ -16847,7 +17100,7 @@ button,
   }
 
   .lg\:hover\:border-white-25:hover {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .lg\:hover\:border-white-50:hover {
@@ -16855,11 +17108,15 @@ button,
   }
 
   .lg\:hover\:border-white-65:hover {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .lg\:hover\:border-white-75:hover {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:hover\:border-white-90:hover {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .lg\:hover\:border-red-darkest:hover {
@@ -17844,6 +18101,10 @@ button,
     height: 7in;
   }
 
+  .lg\:h-page {
+    height: 21rem;
+  }
+
   .lg\:h-100vh {
     height: 100vh;
   }
@@ -18400,6 +18661,10 @@ button,
     max-height: 7in;
   }
 
+  .lg\:max-h-page {
+    max-height: 21rem;
+  }
+
   .lg\:max-h-100vh {
     max-height: 100vh;
   }
@@ -18514,6 +18779,10 @@ button,
 
   .lg\:max-w-7in {
     max-width: 7in;
+  }
+
+  .lg\:max-w-page {
+    max-width: 16rem;
   }
 
   .lg\:max-w-100vw {
@@ -18632,6 +18901,10 @@ button,
     min-height: 7in;
   }
 
+  .lg\:min-h-page {
+    min-height: 21rem;
+  }
+
   .lg\:min-h-100vh {
     min-height: 100vh;
   }
@@ -18746,6 +19019,10 @@ button,
 
   .lg\:min-w-7in {
     min-width: 7in;
+  }
+
+  .lg\:min-w-page {
+    min-width: 16rem;
   }
 
   .lg\:min-w-100vw {
@@ -19799,7 +20076,7 @@ button,
   }
 
   .lg\:text-white-25 {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .lg\:text-white-50 {
@@ -19807,11 +20084,15 @@ button,
   }
 
   .lg\:text-white-65 {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .lg\:text-white-75 {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:text-white-90 {
+    color: rgba(255, 255, 255, .9);
   }
 
   .lg\:text-red-darkest {
@@ -20123,7 +20404,7 @@ button,
   }
 
   .lg\:hover\:text-white-25:hover {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .lg\:hover\:text-white-50:hover {
@@ -20131,11 +20412,15 @@ button,
   }
 
   .lg\:hover\:text-white-65:hover {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .lg\:hover\:text-white-75:hover {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .lg\:hover\:text-white-90:hover {
+    color: rgba(255, 255, 255, .9);
   }
 
   .lg\:hover\:text-red-darkest:hover {
@@ -20716,6 +21001,10 @@ button,
     width: 7in;
   }
 
+  .lg\:w-page {
+    width: 16rem;
+  }
+
   .lg\:w-100vw {
     width: 100vw;
   }
@@ -20836,7 +21125,7 @@ button,
   }
 
   .xl\:bg-white-25 {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .xl\:bg-white-50 {
@@ -20844,11 +21133,15 @@ button,
   }
 
   .xl\:bg-white-65 {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .xl\:bg-white-75 {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:bg-white-90 {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .xl\:bg-red-darkest {
@@ -21160,7 +21453,7 @@ button,
   }
 
   .xl\:hover\:bg-white-25:hover {
-    background-color: rgba(255, 255, 255, .75);
+    background-color: rgba(255, 255, 255, .25);
   }
 
   .xl\:hover\:bg-white-50:hover {
@@ -21168,11 +21461,15 @@ button,
   }
 
   .xl\:hover\:bg-white-65:hover {
-    background-color: rgba(255, 255, 255, .35);
+    background-color: rgba(255, 255, 255, .65);
   }
 
   .xl\:hover\:bg-white-75:hover {
-    background-color: rgba(255, 255, 255, .25);
+    background-color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:hover\:bg-white-90:hover {
+    background-color: rgba(255, 255, 255, .9);
   }
 
   .xl\:hover\:bg-red-darkest:hover {
@@ -21548,7 +21845,7 @@ button,
   }
 
   .xl\:border-white-25 {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .xl\:border-white-50 {
@@ -21556,11 +21853,15 @@ button,
   }
 
   .xl\:border-white-65 {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .xl\:border-white-75 {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:border-white-90 {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .xl\:border-red-darkest {
@@ -21872,7 +22173,7 @@ button,
   }
 
   .xl\:hover\:border-white-25:hover {
-    border-color: rgba(255, 255, 255, .75);
+    border-color: rgba(255, 255, 255, .25);
   }
 
   .xl\:hover\:border-white-50:hover {
@@ -21880,11 +22181,15 @@ button,
   }
 
   .xl\:hover\:border-white-65:hover {
-    border-color: rgba(255, 255, 255, .35);
+    border-color: rgba(255, 255, 255, .65);
   }
 
   .xl\:hover\:border-white-75:hover {
-    border-color: rgba(255, 255, 255, .25);
+    border-color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:hover\:border-white-90:hover {
+    border-color: rgba(255, 255, 255, .9);
   }
 
   .xl\:hover\:border-red-darkest:hover {
@@ -22869,6 +23174,10 @@ button,
     height: 7in;
   }
 
+  .xl\:h-page {
+    height: 21rem;
+  }
+
   .xl\:h-100vh {
     height: 100vh;
   }
@@ -23425,6 +23734,10 @@ button,
     max-height: 7in;
   }
 
+  .xl\:max-h-page {
+    max-height: 21rem;
+  }
+
   .xl\:max-h-100vh {
     max-height: 100vh;
   }
@@ -23539,6 +23852,10 @@ button,
 
   .xl\:max-w-7in {
     max-width: 7in;
+  }
+
+  .xl\:max-w-page {
+    max-width: 16rem;
   }
 
   .xl\:max-w-100vw {
@@ -23657,6 +23974,10 @@ button,
     min-height: 7in;
   }
 
+  .xl\:min-h-page {
+    min-height: 21rem;
+  }
+
   .xl\:min-h-100vh {
     min-height: 100vh;
   }
@@ -23771,6 +24092,10 @@ button,
 
   .xl\:min-w-7in {
     min-width: 7in;
+  }
+
+  .xl\:min-w-page {
+    min-width: 16rem;
   }
 
   .xl\:min-w-100vw {
@@ -24824,7 +25149,7 @@ button,
   }
 
   .xl\:text-white-25 {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .xl\:text-white-50 {
@@ -24832,11 +25157,15 @@ button,
   }
 
   .xl\:text-white-65 {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .xl\:text-white-75 {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:text-white-90 {
+    color: rgba(255, 255, 255, .9);
   }
 
   .xl\:text-red-darkest {
@@ -25148,7 +25477,7 @@ button,
   }
 
   .xl\:hover\:text-white-25:hover {
-    color: rgba(255, 255, 255, .75);
+    color: rgba(255, 255, 255, .25);
   }
 
   .xl\:hover\:text-white-50:hover {
@@ -25156,11 +25485,15 @@ button,
   }
 
   .xl\:hover\:text-white-65:hover {
-    color: rgba(255, 255, 255, .35);
+    color: rgba(255, 255, 255, .65);
   }
 
   .xl\:hover\:text-white-75:hover {
-    color: rgba(255, 255, 255, .25);
+    color: rgba(255, 255, 255, .75);
+  }
+
+  .xl\:hover\:text-white-90:hover {
+    color: rgba(255, 255, 255, .9);
   }
 
   .xl\:hover\:text-red-darkest:hover {
@@ -25739,6 +26072,10 @@ button,
 
   .xl\:w-7in {
     width: 7in;
+  }
+
+  .xl\:w-page {
+    width: 16rem;
   }
 
   .xl\:w-100vw {

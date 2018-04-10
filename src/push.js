@@ -28,6 +28,8 @@ const settings = {
     'desc(ranking.index)',
     'asc(pageId)',
   ],
+  attributesToSnippet: ['content:55'],
+  snippetEllipsisText: '…',
   distinct: true,
   attributeForDistinct: 'pageId',
 };
