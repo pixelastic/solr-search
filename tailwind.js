@@ -27,6 +27,9 @@ const colors = {
   'red-light': '#ef5753',
   'red-lighter': '#f9acaa',
   'red-lightest': '#fcebea',
+  'red-25': 'rgba(217, 65, 30, .25)',
+  'red-50': 'rgba(217, 65, 30, .5)',
+  'red-75': 'rgba(217, 65, 30, .75)',
 
   'orange-darkest': '#462a16',
   'orange-darker': '#613b1f',
