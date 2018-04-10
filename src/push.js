@@ -3,6 +3,7 @@ const _ = require('lodash');
 const fs = require('fs');
 const algoliasearch = require('algoliasearch');
 const jsonfile = require('jsonfile');
+const Promise = require('bluebird');
 
 const appId = 'MXM0JWJNIW';
 const indexName = 'solr';
@@ -37,11 +38,24 @@ const settings = {
 index
   .clearIndex()
   .then(() => {
-    index.setSettings(settings);
+    console.info('Index cleared');
   })
+  .then(() => index.setSettings(settings))
   .then(() => {
-    index.addObjects(records);
+    console.info('Settings set');
   })
+  .then(() =>
+    Promise.all(
+      _.map(_.chunk(records, 500), (chunk, id) =>
+        index.addObjects(chunk).then(() => {
+          console.info(`chunk ${id} loaded`);
+        })
+      )
+    )
+  )
   .then(() => {
     console.info('finished');
+    process.exit();
   });
+
+//   .then(() => index.addObjects(records))

@@ -21,8 +21,8 @@ function allItemsTemplate(response) {
     let zoomPng = sourcePng;
     if (!isLocalhost) {
       backgroundPng = cloudinary(sourcePng, {
-        width: 265,
-        height: 345,
+        width: 132,
+        height: 172,
         quality: 70,
         format: 'auto',
       });

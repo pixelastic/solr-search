@@ -4,7 +4,7 @@ const stringify = require('json-stable-stringify');
 const fs = require('fs');
 
 let records = [];
-_.each(_.range(6, 120), pageId => {
+_.each(_.range(6, 1200), pageId => {
   console.info(`Page: ${pageId}`);
   records = records.concat(extractor.init(pageId).getRecords());
 });
