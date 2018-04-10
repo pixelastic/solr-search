@@ -5,6 +5,7 @@
   <meta charset="utf-8">
   <meta http-equiv="x-ua-compatible" content="ie=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="shortcut icon" href="./favicon.ico">
 
   <title>Solr manual search</title>
   <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/instantsearch.js@2.6.3/dist/instantsearch.min.css">
@@ -12,21 +13,12 @@
   <link rel="stylesheet" href="./style.css">
 </head>
 
-<body class="">
+<body class="border-t-3 border-red">
   <img class="offscreen" id="zoom" />
-  <div class="absolute pin-t w-100 h-1 bg-red"></div>
-
   <div class="mt-3 mx-auto container">
-
-    <div class="">
-      <div id="searchbox" class="w-50 mx-auto"></div>
-    </div>
-
-    <div class="mt-1">
-      <div id="hits"></div>
-    </div>
+    <div id="searchbox" class="w-50 mx-auto"></div>
+    <div id="hits" class="mt-1"></div>
   </div>
-
 
   <script src="https://cdn.jsdelivr.net/npm/jquery@3.3.1/dist/jquery.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/medium-zoom@0.4.0/dist/medium-zoom.min.js"></script>
