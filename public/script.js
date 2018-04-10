@@ -34,6 +34,9 @@ function allItemsTemplate(response) {
         quality: 80,
         format: 'png'
       });
+
+      // Preload it
+      new Image().src = zoomPng;
     }
     var content = hit._snippetResult.content.value;
     var title = '';
