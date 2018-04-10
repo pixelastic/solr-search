@@ -32,7 +32,7 @@ function allItemsTemplate(response) {
         width: 1575,
         height: 1650,
         quality: 80,
-        format: 'auto'
+        format: 'png'
       });
     }
     var content = hit._snippetResult.content.value;

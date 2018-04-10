@@ -30,7 +30,7 @@ function allItemsTemplate(response) {
         width: 1575,
         height: 1650,
         quality: 80,
-        format: 'auto',
+        format: 'png',
       });
     }
     const content = hit._snippetResult.content.value;
