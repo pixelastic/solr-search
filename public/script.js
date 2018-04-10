@@ -12,17 +12,36 @@ $('#hits').on('click', '[data-zoom-target]', function (event) {
   return false;
 });
 
+var currentUrl = window.location.href;
+var isLocalhost = currentUrl === 'http://127.0.0.1:8080/';
+
 function allItemsTemplate(response) {
   return _.map(response.hits, function (hit) {
     var paddedId = ('' + hit.pageId).padStart(4, '0');
-    var png = './png/' + paddedId + '.png';
+    var sourcePng = currentUrl + 'png/' + paddedId + '.png';
+    var backgroundPng = sourcePng;
+    var zoomPng = sourcePng;
+    if (!isLocalhost) {
+      backgroundPng = cloudinary(sourcePng, {
+        width: 265,
+        height: 345,
+        quality: 70,
+        format: 'auto'
+      });
+      zoomPng = cloudinary(sourcePng, {
+        width: 1575,
+        height: 1650,
+        quality: 80,
+        format: 'auto'
+      });
+    }
     var content = hit._snippetResult.content.value;
     var title = '';
     if (hit._highlightResult.hierarchy) {
       title = hit._highlightResult.hierarchy[0].value;
     }
     var page = hit.pageId - 5;
-    return '\n  <div class="fln p-0+ mb-1 border-1 relative cursor-pointer" data-zoom-target="' + png + '">\n    <div class="absolute pin hover:bg-red-25"></div>\n    <div class="bg-cover bg-no-repeat w-page h-page flcnw" style="background-image:url(' + png + ');">\n      <div class="fla flcnw">\n        <div class="fln text-red font-bold bg-white-75 py-1 px-0+">\n          <div>' + title + '</div>\n        </div>\n        <div class="fla flrnw flc">\n          <div class="text-grey-darkest text-1 italic max-w-page overflow-hidden mx-1 p-0+ rounded bg-white-75">' + content + '</div>\n        </div>\n      </div>\n      <div class="fln text-right p-0+ italic text--1 bg-white-75">Page ' + page + '</div>\n    </div>\n\n  </div>\n    ';
+    return '\n  <div class="fln p-0+ mb-1 border-1 relative cursor-pointer" data-zoom-target="' + zoomPng + '">\n    <div class="absolute pin hover:bg-red-25"></div>\n    <div class="bg-cover bg-no-repeat w-page h-page flcnw" style="background-image:url(' + backgroundPng + ');">\n      <div class="fla flcnw">\n        <div class="fln text-red font-bold bg-white-75 py-1 px-0+">\n          <div>' + title + '</div>\n        </div>\n        <div class="fla flrnw flc">\n          <div class="text-grey-darkest text-1 italic max-w-page overflow-hidden mx-1 p-0+ rounded bg-white-75">' + content + '</div>\n        </div>\n      </div>\n      <div class="fln text-right p-0+ italic text--1 bg-white-75">Page ' + page + '</div>\n    </div>\n\n  </div>\n    ';
   }).join(' ');
 }
 

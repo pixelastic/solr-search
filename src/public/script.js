@@ -10,10 +10,29 @@ $('#hits').on('click', '[data-zoom-target]', event => {
   return false;
 });
 
+const currentUrl = window.location.href;
+const isLocalhost = currentUrl === 'http://127.0.0.1:8080/';
+
 function allItemsTemplate(response) {
   return _.map(response.hits, hit => {
     const paddedId = `${hit.pageId}`.padStart(4, '0');
-    const png = `./png/${paddedId}.png`;
+    const sourcePng = `${currentUrl}png/${paddedId}.png`;
+    let backgroundPng = sourcePng;
+    let zoomPng = sourcePng;
+    if (!isLocalhost) {
+      backgroundPng = cloudinary(sourcePng, {
+        width: 265,
+        height: 345,
+        quality: 70,
+        format: 'auto',
+      });
+      zoomPng = cloudinary(sourcePng, {
+        width: 1575,
+        height: 1650,
+        quality: 80,
+        format: 'auto',
+      });
+    }
     const content = hit._snippetResult.content.value;
     let title = '';
     if (hit._highlightResult.hierarchy) {
@@ -21,9 +40,9 @@ function allItemsTemplate(response) {
     }
     const page = hit.pageId - 5;
     return `
-  <div class="fln p-0+ mb-1 border-1 relative cursor-pointer" data-zoom-target="${png}">
+  <div class="fln p-0+ mb-1 border-1 relative cursor-pointer" data-zoom-target="${zoomPng}">
     <div class="absolute pin hover:bg-red-25"></div>
-    <div class="bg-cover bg-no-repeat w-page h-page flcnw" style="background-image:url(${png});">
+    <div class="bg-cover bg-no-repeat w-page h-page flcnw" style="background-image:url(${backgroundPng});">
       <div class="fla flcnw">
         <div class="fln text-red font-bold bg-white-75 py-1 px-0+">
           <div>${title}</div>
